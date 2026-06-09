@@ -12,9 +12,9 @@
   .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; background: #EEEDFE; color: #3C3489; }
   h1 { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; }
   .hero p { font-size: 14px; color: #6e6e73; line-height: 1.7; }
-  .section { margin-bottom: 2rem; }
-  .section-title { font-size: 12px; font-weight: 600; color: #6e6e73; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5ea; }
-  .card { background: #fff; border: 1px solid #e5e5ea; border-radius: 14px; padding: 1.1rem 1.3rem; margin-bottom: 12px; }
+  .section { margin-bottom: 2.5rem; }
+  .section-title { font-size: 13px; font-weight: 600; color: #6e6e73; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #e5e5ea; }
+  .card { background: #fff; border: 1px solid #e5e5ea; border-radius: 14px; padding: 1.2rem 1.4rem; margin-bottom: 14px; }
   .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
   .icon-circle { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
   .ib { background: #E6F1FB; } .ip { background: #EEEDFE; } .it { background: #E1F5EE; }
@@ -27,10 +27,10 @@
   th { text-align: left; font-weight: 600; color: #6e6e73; padding: 7px 8px; background: #f5f5f7; }
   td { padding: 8px 8px; border-bottom: 1px solid #f0f0f2; color: #1d1d1f; vertical-align: top; }
   tr:last-child td { border-bottom: none; }
-  .tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 10px; margin-left: 5px; font-weight: 500; }
+  .tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 10px; margin-left: 6px; font-weight: 500; }
   .tm { background: #FCEBEB; color: #A32D2D; }
   ul.sl { list-style: none; }
-  ul.sl li { display: flex; gap: 10px; font-size: 13px; line-height: 1.7; padding: 5px 0; border-bottom: 1px solid #f0f0f2; }
+  ul.sl li { display: flex; gap: 10px; font-size: 13px; line-height: 1.7; padding: 6px 0; border-bottom: 1px solid #f0f0f2; }
   ul.sl li:last-child { border-bottom: none; }
   .sn { font-size: 11px; font-weight: 600; color: #aeaeb2; min-width: 20px; padding-top: 3px; }
   .tip { background: #f5f5f7; border-radius: 10px; padding: 10px 14px; margin-top: 12px; font-size: 12px; color: #6e6e73; line-height: 1.7; }
@@ -63,17 +63,21 @@
   .ln { margin-bottom: 12px; padding-left: 12px; border-left: 2px solid #e5e5ea; }
   .ln.us { border-left-color: #534AB7; }
   .sn3 { font-size: 11.5px; color: #6e6e73; margin-top: 10px; padding: 7px 12px; background: #fff; border-radius: 8px; line-height: 1.6; border: 1px solid #e5e5ea; }
-  .footer { font-size: 12px; color: #aeaeb2; padding-top: 1.2rem; border-top: 1px solid #e5e5ea; line-height: 1.9; margin-top: 1rem; }
+  .footer { font-size: 12px; color: #aeaeb2; padding-top: 1.5rem; border-top: 1px solid #e5e5ea; line-height: 1.9; margin-top: 2rem; }
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <!-- 히어로 영역 -->
   <div class="hero">
     <span class="badge">운영본부 · 신입사원 가이드</span>
     <h1>티온페이 업무 가이드</h1>
     <p>가맹점이 결제를 사용할 수 있도록 등록부터 운영까지 지원하는 일을 합니다.</p>
   </div>
 
+  <!-- 회사 구조 -->
   <div class="section">
     <div class="section-title">회사 구조</div>
     <div class="card">
@@ -90,9 +94,11 @@
     </div>
   </div>
 
+  <!-- 주요 업무 -->
   <div class="section">
     <div class="section-title">주요 업무</div>
 
+    <!-- 카드 1: 서류 접수 -->
     <div class="card">
       <div class="card-header">
         <div class="icon-circle ib">📄</div>
@@ -115,9 +121,10 @@
         <tr><td>대표자 신분증 <span class="tag tm">필수</span></td><td>유효기간, 이름 일치</td></tr>
         <tr><td>가맹점계약서 <span class="tag tm">필수</span></td><td>서명·날인 누락 여부, 계약 조건 확인</td></tr>
       </table>
-      <div class="tip"><strong>⚠ 자주 하는 실수</strong> — 통장 예금주와 사업자 명의가 다를 때 그냥 넘기면 PG사에서 반려돼요. 꼭 먼저 확인하세요.</div>
+      <div class="tip"><strong>⚠ 자주 하는 실수</strong> — 통장 예금주와 사업자 명의가 다를 때 그냥 넘기면 문제가 될 수 있어요. 꼭 먼저 확인하세요.</div>
     </div>
 
+    <!-- 카드 2: 단말기 다운로드 -->
     <div class="card">
       <div class="card-header">
         <div class="icon-circle ip">📱</div>
@@ -132,9 +139,10 @@
         <li><span class="sn">3</span>PG사 시스템에서 해당 TID로 다운로드 요청</li>
         <li><span class="sn">4</span>가맹점에 완료 안내 또는 현장 확인</li>
       </ul>
-      <div class="tip"><strong>참고</strong> — 단말기 기종이 여러 종류 있어요. 처음에는 선배한테 기종별 다운로드 방법을 따로 정리해달라고 요청해두면 좋아요.</div>
+      <div class="tip"><strong>참고</strong> — 단말기 기종이 여러 종류 있어요. 처음에는 기종별 다운로드 방법을 따로 정리해달라고 요청해두면 좋아요.</div>
     </div>
 
+    <!-- 카드 3: 가맹점 응대 -->
     <div class="card">
       <div class="card-header">
         <div class="icon-circle it">🎧</div>
@@ -153,6 +161,7 @@
     </div>
   </div>
 
+  <!-- 정산 주기 -->
   <div class="section">
     <div class="section-title">정산 주기</div>
     <div class="card">
@@ -173,6 +182,7 @@
     </div>
   </div>
 
+  <!-- 문의 유형별 대응 스크립트 (인터랙티브 탭) -->
   <div class="section">
     <div class="section-title">문의 유형별 대응 스크립트</div>
     <div class="card">
@@ -182,6 +192,7 @@
         <button class="tb" onclick="showTab('d',this)">단말기 오작동</button>
         <button class="tb" onclick="showTab('c',this)">정보 변경</button>
       </div>
+      
       <div class="sp on" id="t-e">
         <div class="si3">
           <div class="spk">가맹점</div>
@@ -193,6 +204,7 @@
         </div>
         <div class="sn3">오류 코드나 메시지를 반드시 메모해두세요. PG사에 문의할 때 필요해요.</div>
       </div>
+      
       <div class="sp" id="t-s">
         <div class="si3">
           <div class="spk">가맹점</div>
@@ -204,6 +216,7 @@
         </div>
         <div class="sn3">정산 유형(D+1 / D+0)을 먼저 파악한 뒤 안내하세요. 공휴일 이슈도 함께 확인.</div>
       </div>
+      
       <div class="sp" id="t-d">
         <div class="si3">
           <div class="spk">가맹점</div>
@@ -215,6 +228,7 @@
         </div>
         <div class="sn3">재다운로드로 해결 안 되면 혼자 해결하려 하지 말고 바로 AS 접수하세요.</div>
       </div>
+      
       <div class="sp" id="t-c">
         <div class="si3">
           <div class="spk">가맹점</div>
@@ -229,14 +243,151 @@
     </div>
   </div>
 
+  <!-- 전산 등록 절차 (Paytree 어드민) -->
+  <div class="section">
+    <div class="section-title">전산 등록 절차 (Paytree 어드민)</div>
+
+    <!-- 개요 -->
+    <div class="card">
+      <p style="font-size:13px;color:#6e6e73;margin-bottom:12px;line-height:1.7;">
+        가맹점 1개를 등록하려면 아래 <strong style="color:#1d1d1f">4단계</strong>를 순서대로 진행해야 해요.<br>
+        어드민 주소: <a href="https://admin.toncompany.net/admin/Login.do" style="color:#185FA5; font-weight: 600;" target="_blank">admin.toncompany.net</a>
+      </p>
+      <div class="flow" style="margin-bottom:0;">
+        <span class="flow-step">① PG정보 등록</span><span class="flow-arrow">→</span>
+        <span class="flow-step">② 영업대행(AID) 등록</span><span class="flow-arrow">→</span>
+        <span class="flow-step">③ 단말기 등록</span><span class="flow-arrow">→</span>
+        <span class="flow-step">④ 가맹점 등록</span>
+      </div>
+    </div>
+
+    <!-- STEP 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle" style="background:#E6F1FB;font-size:15px;font-weight:700;color:#185FA5;">①</div>
+        <div>
+          <div class="card-title">PG정보 등록</div>
+          <div class="card-sub">상위 PG사에서 받은 MID 키값 등록 — 최초 1회만</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span>기본정보 → PG정보관리 → 등록 클릭</li>
+        <li><span class="sn">2</span>PG사 선택 (주로 <strong>네스트페이</strong>), PG MID / PG 터미널번호 / PG KEY 입력</li>
+        <li><span class="sn">3</span>인증방법 선택: 단말기 = <strong>카유</strong> (카드번호+유효기간) / 수기 = <strong>카유비생</strong> (카드번호+유효기간+생년월일+카드비밀번호)</li>
+      </ul>
+      <div class="tip"><strong>참고</strong> — PG코드: 네스트페이 31 / 페이투스 32 / 유니윌 위즈페이 33 / 코페이 34 / 웰컴페이먼츠 35</div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle" style="background:#EEEDFE;font-size:15px;font-weight:700;color:#534AB7;">②</div>
+        <div>
+          <div class="card-title">영업대행(AID) 등록</div>
+          <div class="card-sub">지사/총판/대리점 등 영업자 정보 등록</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span>기본정보 → 영업대행 정보관리 → 등록/변경/조회 → 등록 클릭</li>
+        <li><span class="sn">2</span>AID 입력 (형식: 지사 jpay0+4자리 / 총판 cpay0+4자리 / 대리점 dpay0+4자리 / 영업점 ypay0+4자리)</li>
+        <li><span class="sn">3</span>AID명(상호명), 구분(지사/총판 등), 사업자 유형 선택</li>
+        <li><span class="sn">4</span>정산정보 입력: 정산은행·계좌·예금주, 정산주기(월1회 기본), 정산방법(지사정산), 세금계산기준</li>
+        <li><span class="sn">5</span>저장 후 AID명 클릭 → 수수료 설정 탭에서 od(실시간)/sd(익일) 수수료 등록</li>
+      </ul>
+      <div class="tip">
+        <strong>사업자 유형 구분</strong><br>
+        개인/법인사업자 → 계산서 발행 가능 · 세금 미차감<br>
+        비사업자(누락영업자) → 계산서 발행 불가 · 부가세+원천세 차감<br>
+        <strong style="color:#A32D2D;">⚠ 세금계산 기준은 정산팀 확인 후 등록 — 잘못 적용 시 민원 발생</strong>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle" style="background:#FEF3E2;font-size:15px;font-weight:700;color:#854F0B;">③</div>
+        <div>
+          <div class="card-title">단말기 등록</div>
+          <div class="card-sub">가맹점에 설치할 단말기 정보 등록</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span>기본정보 → 단말기관리 → 등록 클릭</li>
+        <li><span class="sn">2</span>제품번호(시리얼번호) 입력 — 필수값</li>
+        <li><span class="sn">3</span>단말기 종류에 따라 구분:
+          <br>· <strong>삼성페이 비인증</strong>: PG사=네스트페이, 단말기번호=카테카 채번 TID
+          <br>· <strong>인증 단말기</strong>: PG사=해당 PG사, 단말기번호=카테카 채번 TID
+          <br>· <strong>비인증 단말기</strong>: PG사=해당 PG사, 단말기번호=공란(자동생성)
+        </li>
+        <li><span class="sn">4</span>다건 등록 시 메인화면 → 파일형식 다운로드 → 엑셀에 제품번호·PG코드 입력 후 업로드</li>
+      </ul>
+      <div class="tip"><strong>단말기 사용료</strong> — 무선 1대 11,000원 / 유선 1대 20,000원 (가맹점 정산에서 차감)</div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle" style="background:#E1F5EE;font-size:15px;font-weight:700;color:#0F6E56;">④</div>
+        <div>
+          <div class="card-title">가맹점 등록</div>
+          <div class="card-sub">기본정보 → 가맹점정보관리 → 등록</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span><strong>사업자정보</strong>: OD가맹점=가맹점 사업자번호 / SD가맹점=상위PG 사업자번호. 상호명·대표자명·주소 계약서대로 입력</li>
+        <li><span class="sn">2</span><strong>가맹점정보</strong>: MID 입력 후 중복확인, MID명(가맹점명), 전화번호, 계약담당자1=본인</li>
+        <li><span class="sn">3</span><strong>영업점정보</strong>: 지사→총판→대리점→영업점 순서로 찾기 버튼으로 각각 연결, 수수료 선택</li>
+        <li><span class="sn">4</span><strong>정산정보</strong> 입력:
+          <br>· 정산방법: 직접정산(계좌) / 지갑정산 / PG정산 중 선택
+          <br>· 지급대행사: 즉결=페이네스트 / 익일=쿠콘
+          <br>· 취소기능: 익일=미설정(정산전취소) / 즉결=불가능
+          <br>· 송금수수료: 별도 안내 없으면 550원
+          <br>· 수수료 정산기준:선취 / 계산기준:절사 / 등록기준:VAT포함 (변경 불필요)
+        </li>
+        <li><span class="sn">5</span><strong>가맹점 한도</strong>: 기본 월한도 2억 / 일한도 2천만 / 1회한도 300만원</li>
+        <li><span class="sn">6</span>저장 후 → <strong>결제서비스 정보</strong>에서 사용여부 미사용→사용 변경, 정산주기·할부개월수 설정</li>
+        <li><span class="sn">7</span>PG정보 보기 버튼 클릭 → 해당 PG정보 연결 → 완료</li>
+      </ul>
+      <div class="tip">
+        <strong>⚠ 가맹점 상태</strong> — 등록 후 상태는 <strong>중지</strong>로 설정, 관리자 사용승인 후 익일 10시 오픈으로 가맹점에 안내<br>
+        <strong>SD vs OD</strong> — SD: 비사업자, 매출신고 미신고 / OD: 개인·법인사업자, 매출신고 신고
+      </div>
+    </div>
+
+    <!-- 피플 등록 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle" style="background:#F5F0FF;font-size:15px;font-weight:700;color:#6B3FA0;">+</div>
+        <div>
+          <div class="card-title">피플(P플) 계정 생성</div>
+          <div class="card-sub">전산 등록 후 피플 관리자에서 가맹점 앱 계정도 함께 생성</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span>피플 관리자 → 회원관리 → 회원등록</li>
+        <li><span class="sn">2</span>아이디: 전산 MID에서 마지막 m 제외한 값 (예: gpay7772sm → gpay7772s)</li>
+        <li><span class="sn">3</span>회원유형: 반드시 <strong>사업자회원</strong>으로 등록 (미설정 시 저장 안 됨)</li>
+        <li><span class="sn">4</span>가맹점에 앱(P플) 설치 안내 및 초기 비밀번호 전달 (초기 PIN번호: 000000)</li>
+      </ul>
+      <div class="tip"><strong>참고</strong> — 피플 앱과 웹관리자 계정은 호환되지 않아요. 각각 별도 비밀번호 사용.</div>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
   <div class="footer">모르는 게 생기면 바로 물어보는 게 제일 빨라요. 혼자 해결하려다 시간 버리지 말고!</div>
 </div>
 
 <script>
-function showTab(id,btn){
-  document.querySelectorAll('.sp').forEach(e=>e.classList.remove('on'));
-  document.querySelectorAll('.tb').forEach(e=>e.classList.remove('on'));
-  document.getElementById('t-'+id).classList.add('on');
+function showTab(id, btn){
+  // 모든 탭 콘텐츠 숨기기 및 모든 버튼 활성화 해제
+  document.querySelectorAll('.sp').forEach(e => e.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(e => e.classList.remove('on'));
+  
+  // 선택한 탭 콘텐츠 보이기 및 버튼 활성화
+  const targetTab = document.getElementById('t-' + id);
+  if(targetTab) {
+    targetTab.classList.add('on');
+  }
   btn.classList.add('on');
 }
 </script>
