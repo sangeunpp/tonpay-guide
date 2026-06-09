@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>티온페이 신입사원 업무 가이드</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; background: #f5f5f7; color: #1d1d1f; padding: 2rem 1rem; }
+  .wrap { max-width: 700px; margin: 0 auto; }
+  .hero { margin-bottom: 2rem; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; background: #EEEDFE; color: #3C3489; }
+  h1 { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; }
+  .hero p { font-size: 14px; color: #6e6e73; line-height: 1.7; }
+  .section { margin-bottom: 2rem; }
+  .section-title { font-size: 12px; font-weight: 600; color: #6e6e73; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e5e5ea; }
+  .card { background: #fff; border: 1px solid #e5e5ea; border-radius: 14px; padding: 1.1rem 1.3rem; margin-bottom: 12px; }
+  .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .icon-circle { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
+  .ib { background: #E6F1FB; } .ip { background: #EEEDFE; } .it { background: #E1F5EE; }
+  .card-title { font-size: 15px; font-weight: 600; color: #1d1d1f; }
+  .card-sub { font-size: 12px; color: #6e6e73; margin-top: 3px; }
+  .flow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 8px 0 14px; }
+  .flow-step { background: #f5f5f7; border: 1px solid #e5e5ea; border-radius: 8px; font-size: 12px; padding: 4px 10px; color: #1d1d1f; }
+  .flow-arrow { font-size: 12px; color: #aeaeb2; }
+  table { width: 100%; font-size: 12.5px; border-collapse: collapse; margin-top: 8px; }
+  th { text-align: left; font-weight: 600; color: #6e6e73; padding: 7px 8px; background: #f5f5f7; }
+  td { padding: 8px 8px; border-bottom: 1px solid #f0f0f2; color: #1d1d1f; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 10px; margin-left: 5px; font-weight: 500; }
+  .tm { background: #FCEBEB; color: #A32D2D; }
+  ul.sl { list-style: none; }
+  ul.sl li { display: flex; gap: 10px; font-size: 13px; line-height: 1.7; padding: 5px 0; border-bottom: 1px solid #f0f0f2; }
+  ul.sl li:last-child { border-bottom: none; }
+  .sn { font-size: 11px; font-weight: 600; color: #aeaeb2; min-width: 20px; padding-top: 3px; }
+  .tip { background: #f5f5f7; border-radius: 10px; padding: 10px 14px; margin-top: 12px; font-size: 12px; color: #6e6e73; line-height: 1.7; }
+  .tip strong { color: #1d1d1f; font-weight: 600; }
+  /* 정산 */
+  .sg { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  .sc { border-radius: 12px; padding: 16px 18px; }
+  .d1 { background: #E6F1FB; border: 1px solid #B5D4F4; }
+  .d0 { background: #E1F5EE; border: 1px solid #9FE1CB; }
+  .sl2 { font-size: 11px; font-weight: 700; margin-bottom: 4px; }
+  .d1 .sl2 { color: #185FA5; } .d0 .sl2 { color: #0F6E56; }
+  .sn2 { font-size: 18px; font-weight: 700; margin-bottom: 5px; }
+  .d1 .sn2 { color: #0C447C; } .d0 .sn2 { color: #085041; }
+  .sd { font-size: 12px; line-height: 1.5; }
+  .d1 .sd { color: #185FA5; } .d0 .sd { color: #0F6E56; }
+  /* 구조 */
+  .struct { display: grid; grid-template-columns: repeat(auto-fit, minmax(82px, 1fr)); gap: 6px; margin-top: 10px; }
+  .si { background: #f5f5f7; border-radius: 10px; padding: 9px; text-align: center; font-size: 11px; color: #6e6e73; line-height: 1.6; }
+  .si.hi { background: #EEEDFE; color: #3C3489; border: 1px solid #AFA9EC; }
+  .si strong { display: block; font-size: 12.5px; font-weight: 700; color: #1d1d1f; }
+  .si.hi strong { color: #3C3489; }
+  /* 탭 */
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tb { font-size: 12px; padding: 6px 14px; border-radius: 20px; border: 1px solid #e5e5ea; background: transparent; color: #6e6e73; cursor: pointer; font-family: inherit; }
+  .tb.on { background: #EEEDFE; color: #3C3489; border-color: #AFA9EC; font-weight: 600; }
+  .sp { display: none; }
+  .sp.on { display: block; }
+  .si3 { background: #f5f5f7; border-radius: 10px; padding: 14px 16px; font-size: 13px; line-height: 1.9; }
+  .spk { font-size: 11px; font-weight: 600; color: #6e6e73; margin-bottom: 2px; }
+  .ln { margin-bottom: 12px; padding-left: 12px; border-left: 2px solid #e5e5ea; }
+  .ln.us { border-left-color: #534AB7; }
+  .sn3 { font-size: 11.5px; color: #6e6e73; margin-top: 10px; padding: 7px 12px; background: #fff; border-radius: 8px; line-height: 1.6; border: 1px solid #e5e5ea; }
+  .footer { font-size: 12px; color: #aeaeb2; padding-top: 1.2rem; border-top: 1px solid #e5e5ea; line-height: 1.9; margin-top: 1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="badge">운영본부 · 신입사원 가이드</span>
+    <h1>티온페이 업무 가이드</h1>
+    <p>가맹점이 결제를 사용할 수 있도록 등록부터 운영까지 지원하는 일을 합니다.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">회사 구조</div>
+    <div class="card">
+      <p style="font-size:12.5px;color:#6e6e73;margin-bottom:8px;line-height:1.7;">PG사와 가맹점 사이를 연결하는 역할이에요. <strong style="color:#1d1d1f">티온페이</strong>가 우리 회사 위치입니다.</p>
+      <div class="struct">
+        <div class="si"><strong>PG사</strong>결제 처리</div>
+        <div class="si hi"><strong>티온페이</strong>우리 회사</div>
+        <div class="si"><strong>지사</strong></div>
+        <div class="si"><strong>총판</strong></div>
+        <div class="si"><strong>대리점</strong></div>
+        <div class="si"><strong>영업소</strong></div>
+        <div class="si"><strong>가맹점</strong>최종 고객</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">주요 업무</div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle ib">📄</div>
+        <div>
+          <div class="card-title">가맹점 등록 서류 접수 및 확인</div>
+          <div class="card-sub">서류를 받아 검토하고 PG사 심사로 넘기는 업무</div>
+        </div>
+      </div>
+      <div class="flow">
+        <span class="flow-step">서류 접수</span><span class="flow-arrow">→</span>
+        <span class="flow-step">서류 검토</span><span class="flow-arrow">→</span>
+        <span class="flow-step">PG사 심사 요청</span><span class="flow-arrow">→</span>
+        <span class="flow-step">승인 확인</span><span class="flow-arrow">→</span>
+        <span class="flow-step">가맹점 개설 완료</span>
+      </div>
+      <table>
+        <tr><th>서류 유형</th><th>주요 확인 항목</th></tr>
+        <tr><td>사업자등록증 <span class="tag tm">필수</span></td><td>상호명, 사업자번호, 업종 일치 여부</td></tr>
+        <tr><td>통장사본 <span class="tag tm">필수</span></td><td>예금주명이 사업자(또는 대표자)와 일치하는지</td></tr>
+        <tr><td>대표자 신분증 <span class="tag tm">필수</span></td><td>유효기간, 이름 일치</td></tr>
+        <tr><td>가맹점계약서 <span class="tag tm">필수</span></td><td>서명·날인 누락 여부, 계약 조건 확인</td></tr>
+      </table>
+      <div class="tip"><strong>⚠ 자주 하는 실수</strong> — 통장 예금주와 사업자 명의가 다를 때 그냥 넘기면 PG사에서 반려돼요. 꼭 먼저 확인하세요.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle ip">📱</div>
+        <div>
+          <div class="card-title">단말기 다운로드</div>
+          <div class="card-sub">가맹점에 카드 단말기 설정을 내려주는 업무</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">1</span>가맹점 TID(단말기 번호) 확인</li>
+        <li><span class="sn">2</span>단말기 기종 확인 (기종마다 다운로드 방식이 달라요)</li>
+        <li><span class="sn">3</span>PG사 시스템에서 해당 TID로 다운로드 요청</li>
+        <li><span class="sn">4</span>가맹점에 완료 안내 또는 현장 확인</li>
+      </ul>
+      <div class="tip"><strong>참고</strong> — 단말기 기종이 여러 종류 있어요. 처음에는 선배한테 기종별 다운로드 방법을 따로 정리해달라고 요청해두면 좋아요.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="icon-circle it">🎧</div>
+        <div>
+          <div class="card-title">가맹점 응대</div>
+          <div class="card-sub">문의·불만·오류 대응</div>
+        </div>
+      </div>
+      <ul class="sl">
+        <li><span class="sn">•</span>결제 오류 문의 → 오류 내용 메모 후 PG사 확인 → 가맹점에 결과 안내</li>
+        <li><span class="sn">•</span>정산 문의 → 정산일·금액 확인 후 안내 (모르면 담당자에게 먼저 확인)</li>
+        <li><span class="sn">•</span>단말기 오작동 → 재다운로드 먼저 시도, 해결 안 되면 AS 접수</li>
+        <li><span class="sn">•</span>가맹점 정보 변경 (계좌·주소 등) → 변경 서류 접수 후 처리</li>
+      </ul>
+      <div class="tip"><strong>응대 기본 원칙</strong> — 바로 답을 모를 때는 "확인 후 연락드리겠습니다"가 "모르겠습니다"보다 훨씬 낫습니다. 확인하고 꼭 다시 연락하세요.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">정산 주기</div>
+    <div class="card">
+      <p style="font-size:13px;color:#6e6e73;margin-bottom:10px;line-height:1.7;">가맹점마다 계약된 정산 주기가 달라요. 문의 시 먼저 해당 가맹점의 정산 유형을 확인하세요.</p>
+      <div class="sg">
+        <div class="sc d1">
+          <div class="sl2">D+1</div>
+          <div class="sn2">익일 정산</div>
+          <div class="sd">결제일 다음 영업일에 정산. 가장 일반적인 유형이에요.</div>
+        </div>
+        <div class="sc d0">
+          <div class="sl2">D+0</div>
+          <div class="sn2">실시간 정산</div>
+          <div class="sd">결제 즉시 정산. 즉결이라고도 부릅니다.</div>
+        </div>
+      </div>
+      <div class="tip" style="margin-top:12px;"><strong>주의</strong> — 공휴일·주말은 영업일에서 제외돼요. D+1 가맹점이 금요일 결제하면 월요일 정산입니다.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">문의 유형별 대응 스크립트</div>
+    <div class="card">
+      <div class="tabs">
+        <button class="tb on" onclick="showTab('e',this)">결제 오류</button>
+        <button class="tb" onclick="showTab('s',this)">정산 문의</button>
+        <button class="tb" onclick="showTab('d',this)">단말기 오작동</button>
+        <button class="tb" onclick="showTab('c',this)">정보 변경</button>
+      </div>
+      <div class="sp on" id="t-e">
+        <div class="si3">
+          <div class="spk">가맹점</div>
+          <div class="ln">"결제가 안 돼요 / 오류가 났어요"</div>
+          <div class="spk">담당자</div>
+          <div class="ln us">"네, 불편드려서 죄송합니다. 어떤 오류 메시지가 뜨는지 확인해 주시겠어요?"</div>
+          <div class="spk">담당자 (확인 후)</div>
+          <div class="ln us">"확인해보고 바로 연락드리겠습니다." → PG사 문의 후 결과 안내</div>
+        </div>
+        <div class="sn3">오류 코드나 메시지를 반드시 메모해두세요. PG사에 문의할 때 필요해요.</div>
+      </div>
+      <div class="sp" id="t-s">
+        <div class="si3">
+          <div class="spk">가맹점</div>
+          <div class="ln">"정산이 아직 안 들어왔어요 / 금액이 다른 것 같아요"</div>
+          <div class="spk">담당자</div>
+          <div class="ln us">"확인해드리겠습니다. 상호명과 결제일 알려주시겠어요?"</div>
+          <div class="spk">담당자 (확인 후)</div>
+          <div class="ln us">D+1: "○○일 결제 건은 ○○일 정산 예정입니다."<br>D+0: "실시간 정산 가맹점으로, 결제 즉시 입금됩니다. 입금 내역 다시 확인 부탁드려요."</div>
+        </div>
+        <div class="sn3">정산 유형(D+1 / D+0)을 먼저 파악한 뒤 안내하세요. 공휴일 이슈도 함께 확인.</div>
+      </div>
+      <div class="sp" id="t-d">
+        <div class="si3">
+          <div class="spk">가맹점</div>
+          <div class="ln">"단말기가 이상해요 / 작동이 안 돼요"</div>
+          <div class="spk">담당자</div>
+          <div class="ln us">"TID 번호 확인 후 재다운로드 먼저 진행해볼게요. 잠시만요."</div>
+          <div class="spk">담당자 (재다운로드 후)</div>
+          <div class="ln us">해결 시: "다운로드 완료됐습니다. 다시 확인해보시겠어요?"<br>미해결 시: "AS 접수 진행해드리겠습니다. 방문 일정 조율해드릴게요."</div>
+        </div>
+        <div class="sn3">재다운로드로 해결 안 되면 혼자 해결하려 하지 말고 바로 AS 접수하세요.</div>
+      </div>
+      <div class="sp" id="t-c">
+        <div class="si3">
+          <div class="spk">가맹점</div>
+          <div class="ln">"계좌번호 / 주소가 바뀌었어요"</div>
+          <div class="spk">담당자</div>
+          <div class="ln us">"변경 처리해드리겠습니다. 변경된 통장사본 전달해주시면 바로 진행할게요."</div>
+          <div class="spk">담당자 (서류 수령 후)</div>
+          <div class="ln us">"서류 확인됐습니다. 처리 완료되면 다시 안내드리겠습니다."</div>
+        </div>
+        <div class="sn3">계좌 변경은 통장사본 필수. 처리 후 가맹점에 완료 안내 꼭 하세요.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">모르는 게 생기면 바로 물어보는 게 제일 빨라요. 혼자 해결하려다 시간 버리지 말고!</div>
+</div>
+
+<script>
+function showTab(id,btn){
+  document.querySelectorAll('.sp').forEach(e=>e.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(e=>e.classList.remove('on'));
+  document.getElementById('t-'+id).classList.add('on');
+  btn.classList.add('on');
+}
+</script>
+</body>
+</html>
